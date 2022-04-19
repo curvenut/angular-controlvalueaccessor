@@ -1,0 +1,9 @@
+@mixin create-icon($key, $path) {
+  .icon-#{$key} {
+    content: url(#{$path});
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@include create-icon(house, './icons/house.svg');
